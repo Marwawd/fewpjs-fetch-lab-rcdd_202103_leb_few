@@ -4,11 +4,9 @@ function fetchBooks() {
     .then(json => renderBooks(json))
 }
 
-
-
-  /*fetch('https://anapioficeandfire.com/api/books')
+/*fetch('https://anapioficeandfire.com/api/books')
   .then(resp => resp.json())
-  .then(json => console.log(json.character(1031)));}*/
+  .then(json => console.log(json[5].name));*/
 function renderBooks(books) {
   const main = document.querySelector('main');
 for(let book in books){
