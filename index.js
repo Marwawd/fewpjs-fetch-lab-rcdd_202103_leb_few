@@ -4,7 +4,7 @@ function fetchBooks() {
    .then(resp => resp.json())
    .then(json =>
 //console.log(json[5].name);
-renderBooks(json))
+renderBooks(json))}
 
   /*fetch('https://anapioficeandfire.com/api/books')
   .then(resp => resp.json())
@@ -17,7 +17,7 @@ for(let book in books){
     h2.innerHTML = books[book].name;
     main.appendChild(h2);
   }
-}}
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks();
